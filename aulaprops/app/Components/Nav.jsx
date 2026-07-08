@@ -2,7 +2,7 @@
 
 export default function Menu(){
     return(
-        <nav className="display-flex">
+        <nav className="flex">
             <li>Home</li>
             <li>Anotações</li>
             <li>Usuarios</li>
