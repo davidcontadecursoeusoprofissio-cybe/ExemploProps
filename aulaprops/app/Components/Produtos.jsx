@@ -21,8 +21,8 @@ export default  function Produtos(props){
         <p>Estoque:{props.estoque}</p>
         <div className="flex gap-10">
         <button onClick={aumentar}>➕</button>
-        <button onClick={diminuir}>➖</button>
         <p>{Produtos}</p>
+        <button onClick={diminuir}>➖</button>
         
 
         </div>
