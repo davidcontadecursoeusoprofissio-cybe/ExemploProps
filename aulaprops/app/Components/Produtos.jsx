@@ -6,11 +6,11 @@ export default  function Produtos(props){
     const [Produtos,setProdutos]=useState(0)
 
     function aumentar(){
-        setProdutos(Produtos+1)
+        setProdutos(Produtos+7.50)
     }
 
     function diminuir(){
-        setProdutos(Produtos-1)
+        setProdutos(Produtos-7.50)
     }
     return(
         <div className="bg-gray-100 w-60 h-80 rounded-2xl  flex   flex-col items-center text-center  " >
