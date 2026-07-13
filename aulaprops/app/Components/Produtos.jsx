@@ -5,6 +5,8 @@ import { useState } from "react"
 export default  function Produtos(props){
     const [Produtos,setProdutos]=useState(0)
 
+    
+
     function aumentar(){
         setProdutos(Produtos+7.50)
     }
@@ -29,3 +31,4 @@ export default  function Produtos(props){
         </div>
     )
  }
+ 

@@ -1,13 +1,15 @@
 import Image from "next/image";
 import Menu from "@/app/Components/Nav";
 import Usuarios from "@/app/Components/User";
-
 import Produto from "@/app/Components/Produtos";
+import CorrecaoProduto from "@/app/Components/CorrecaoProduto";
 
 export default function Home() {
   return (
     <>
     <Menu></Menu>
+
+    <CorrecaoProduto></CorrecaoProduto>
 
     <Usuarios  nome ="Gabriel" email =" gabriel@gmail"  contato= "119908">  </Usuarios>
     <Usuarios  nome ="Gabriel" email =" gabriel@gmail"  contato= "119908">  </Usuarios>
