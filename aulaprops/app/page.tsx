@@ -12,7 +12,7 @@ export default function Home() {
     <CorrecaoProduto nome="tek pix" preco="200" quantidade={30} imagem="imagem/images-removebg-preview (1).png"> </CorrecaoProduto>
     <CorrecaoProduto nome ="Celular" preco="450" quantidade={10} imagem="imagem/lg-c1100-4114-g-alt-removebg-preview.png"> </CorrecaoProduto>
     <CorrecaoProduto nome= "folha" preco="25" quantidade={45} imagem="imagem/images-removebg-preview (2).png"></CorrecaoProduto>
-    <CorrecaoProduto nome="lapis" preco="1.50" quantidade={100} imagem=""></CorrecaoProduto>
+    <CorrecaoProduto nome="lapis" preco="1.50" quantidade={100} imagem="imagem/images-removebg-preview (3).png"></CorrecaoProduto>
     <CorrecaoProduto nome="mesa" preco="450" quantidade={25} imagem=""></CorrecaoProduto>
 
     <Usuarios  nome ="Gabriel" email =" gabriel@gmail"  contato= "119908">  </Usuarios>
