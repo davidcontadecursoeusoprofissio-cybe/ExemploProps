@@ -40,7 +40,7 @@ else
             
             <h1>Seja bem-vindo  ao modal que aparece e desaparece click para aparecer</h1>
 
-            <button  onClick={apareceAi}>aquiiiiiiiiiiiii</button>
+            <button  onClick={apareceAi}>aqui</button>
 
         {conteudo}
       
@@ -49,3 +49,6 @@ else
         </>
     )
 }
+//<img src="" alt="" />
+//button entra button
+//button cadastra butto
