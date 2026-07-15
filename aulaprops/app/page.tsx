@@ -3,7 +3,7 @@ import Menu from "@/app/Components/Nav";
 import Usuarios from "@/app/Components/User";
 import Produto from "@/app/Components/Produtos";
 import CorrecaoProduto from "@/app/Components/CorrecaoProduto";
-
+import Alarcon from "@/app/Components/Alarcon";
 export default function Home() {
   return (
     <>
@@ -22,6 +22,8 @@ export default function Home() {
 
     <h1>plataforma para eu testar meus codigos malucos</h1>
     <p>o intuito deste site é testar meu aprendizado , não tem nenhum contexto</p>
+
+    <Alarcon></Alarcon>
     </>   
   );
 }
