@@ -36,11 +36,11 @@ else
         //Crie um state de nome state é o useState
         <>
     
-        <div className="p-6 rounded-lg  bg-gray-900">
+        <div className="p-6 rounded-lg  bg-gray-900 h-300 w-200 text-white">
             
             <h1>Seja bem-vindo  ao modal que aparece e desaparece click para aparecer</h1>
 
-            <button  onClick={apareceAi}>aqui</button>
+            <button  onClick={apareceAi}>aquiiiiiiiiiiiii</button>
 
         {conteudo}
       
