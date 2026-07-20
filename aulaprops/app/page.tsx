@@ -5,6 +5,8 @@ import Produto from "@/app/Components/Produtos";
 import CorrecaoProduto from "@/app/Components/CorrecaoProduto";
 import Alarcon from "@/app/Components/Alarcon";
 import Atividade from "@/app/Components/Atividade";
+import Lista from "@/app/Components/Lista";
+import Lisatatividade from "@/app/Components/Lisatativida";
 export default function Home() {
   return (
     <>
@@ -28,6 +30,9 @@ export default function Home() {
 
 
     <Atividade></Atividade>
+
+    <Lista></Lista>
+    <Lisatatividade></Lisatatividade>
     </>   
   );
 }
