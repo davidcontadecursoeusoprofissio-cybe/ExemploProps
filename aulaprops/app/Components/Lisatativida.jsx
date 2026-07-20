@@ -3,11 +3,11 @@
 import { useState } from "react"
 
 export default function Lista1(){
-    const numeros = ["Jose","Kauan","Maria","Kleiton"]
+    const nomes = ["Jose","Kauan","Maria","Kleiton"]
 
     return(
         <>
-        {numeros.map((nome)=>{
+        {nomes.map((nome)=>{
             if(nome == "Jose"){
                 return <p> {nome}: Você tem que pagar sua conta</p>
 
