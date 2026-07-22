@@ -42,7 +42,8 @@ export default function  ListaDePessoas() {
             usuario.map((usuario)=>{
 
                 if(usuario.status == false){
-                   return console.log("Cadastro cancelado")               
+                   return console.log("Cadastro cancelado") 
+                   //return <h1> cadastro cancelado </h1>  :aparecer na tela            
                 }
                 else
                 {                                        
