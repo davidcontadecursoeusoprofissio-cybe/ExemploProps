@@ -41,7 +41,7 @@ export default function  ListaDePessoas() {
         {
             usuario.map((usuario)=>{
               return (
-                <div key={usuario.email} className="bg-gray-200 w-50 h-25 ">
+                <div key={usuario.email} className="bg-gray-200 w-50 h-25 m-10 ">
               <h1> Nome:{usuario.nome}</h1>
               <h2> Email:{usuario.email}</h2>
               <p> Idade :{usuario.idade}</p>
