@@ -18,7 +18,7 @@ export default function  ListaDePessoas() {
         nome: "Pedro",
         idade: 32,
         email: "pedro@gmail.com",
-        status: true
+        status: false
     },
     {
           nome: "Maria",
@@ -30,7 +30,7 @@ export default function  ListaDePessoas() {
           nome: "David",
         idade: 25,
         email: "David@gmail.com",
-        status: true
+        status: false
     }
 ]
 //acima fica o resto , variaveis, finções, metodos
@@ -40,8 +40,14 @@ export default function  ListaDePessoas() {
         <h1>Lista de usuarios</h1>
         {
             usuario.map((usuario)=>{
-              return (
-                <div key={usuario.email} className="bg-gray-200 w-50 h-25 m-10 ">
+
+                if(usuario.status == false){
+                   return console.log("Cadastro cancelado")               
+                }
+                else
+                {                                        
+                    return (
+              <div key={usuario.email} className="bg-gray-200 w-50 h-25 m-10 ">
               <h1> Nome:{usuario.nome}</h1>
               <h2> Email:{usuario.email}</h2>
               <p> Idade :{usuario.idade}</p>
@@ -49,6 +55,7 @@ export default function  ListaDePessoas() {
 
                 </div>
               ) 
+            }
               
 
             })
