@@ -41,13 +41,13 @@ export default function  ListaDePessoas() {
         {
             usuario.map((usuario)=>{
               return (
-                <>
-              <p key={usuario.email}>{usuario.nome}</p>
-              <p key={usuario.email}>{usuario.idade}</p>
-              <p key={usuario.email}>{usuario.email}</p>
-              <p key={usuario.email}>{usuario.status}</p>
+                <div key={usuario.email} className="bg-gray-200 w-50 h-25 ">
+              <h1> Nome:{usuario.nome}</h1>
+              <h2> Email:{usuario.email}</h2>
+              <p> Idade :{usuario.idade}</p>
+              <p>{usuario.status}</p>
 
-                </>
+                </div>
               ) 
               
 
@@ -56,3 +56,7 @@ export default function  ListaDePessoas() {
         </>
     )
 }
+//<h1 key={usuario.email}> Nome:{usuario.nome}</h1>
+//<h2 key={usuario.email}> Email:{usuario.email}</h2>
+// <p key={usuario.email}> Idade :{usuario.idade}</p>
+// <p key={usuario.email}>{usuario.status}</p>
