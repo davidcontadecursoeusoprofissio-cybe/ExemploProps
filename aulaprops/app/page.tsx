@@ -8,6 +8,11 @@ import Atividade from "@/app/Components/Atividade";
 import Lista from "@/app/Components/Lista";
 import Lisatatividade from "@/app/Components/Lisatativida";
 import ListaDeUsuarios from "@/app/Components/ListaDeUsuarios";
+
+import ItemP from   "@/app/Components/ItemPromocao"
+
+import ItemNaoP from   "@/app/Components/ItemNaoPromocao"
+
 export default function Home() {
   return (
     <>
@@ -32,10 +37,17 @@ export default function Home() {
 
     {/*<Atividade></Atividade>*/}
 
-    <ListaDeUsuarios></ListaDeUsuarios>
+    {/* <ListaDeUsuarios></ListaDeUsuarios> */}
 
     {/*<Lista></Lista>*/}
     {/*<Lisatatividade></Lisatatividade>*/}
+
+      <h1>Itens em promoçao</h1>
+        <ItemP></ItemP>
+
+        <h2>Itens em nao promoçao</h2>
+        <ItemNaoP></ItemNaoP>
+
     </>   
   );
 }
