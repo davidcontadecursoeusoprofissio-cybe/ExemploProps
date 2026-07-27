@@ -5,7 +5,7 @@ export default function ItemP(){
 
 
         <>
-            {
+            {/* {
         dados.map( (itens)=>{
 
             if(itens.status == true)
@@ -18,7 +18,7 @@ export default function ItemP(){
 
 
         } )
-       }
+       } */}
         </>
     )
 }
