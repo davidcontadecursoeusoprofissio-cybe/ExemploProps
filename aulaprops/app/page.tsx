@@ -12,6 +12,7 @@ import ListaDeUsuarios from "@/app/Components/ListaDeUsuarios";
 import ItemP from   "@/app/Components/ItemPromocao"
 
 import ItemNaoP from   "@/app/Components/ItemNaoPromocao"
+import ListaState from "@/app/Components/ListaState"
 
 export default function Home() {
   return (
@@ -47,6 +48,7 @@ export default function Home() {
 
         <h2>Itens em nao promoçao</h2>
         <ItemNaoP></ItemNaoP>
+        <ListaState></ListaState>
 
     </>   
   );
