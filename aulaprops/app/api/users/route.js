@@ -1,18 +1,26 @@
 import {NextResponse} from "next/server";
 
-import sqlite3 from 'sqlite'
+import sqlite3 from 'sqlite3'
 
 import {open} from 'sqlite'
 
 import path from "path";
 
 async function abrirBanco(){
-    return open({
-        filename: path.json(process.cwd(),'database.db'),
+    const db = await open({
+        filename: path.join(process.cwd(),'database.db'),
         driver: sqlite3.Database
 
-    })
-
+    });
+await db.exec(`
+        CREATE TABLE IF NOT EXISTS users (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            nome TEXT NOT NULL,
+            idade INTEGER NOT NULL,
+            foto TEXT
+        )
+    `);
+return db
 }
 
 export async function GET(){
