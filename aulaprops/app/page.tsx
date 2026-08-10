@@ -9,6 +9,7 @@ import Lista from "@/app/Components/Lista";
 import Lisatatividade from "@/app/Components/Lisatativida";
 import ListaDeUsuarios from "@/app/Components/ListaDeUsuarios";
 import ListaStateObjeto from "@/app/Components/LIstaStateObjeto";
+import ListadeUsuariosBanco from "@/app/Components/LIstadeUsuariosBanco"
 
 
 import ItemNaoP from   "@/app/Components/ItemNaoPromocao"
@@ -43,14 +44,16 @@ export default function Home() {
     {/*<Lista></Lista>*/}
     {/*<Lisatatividade></Lisatatividade>*/}
 
-      <h1>Itens em promoçao</h1>
+      {/*<h1>Itens em promoçao</h1>*/}
       
 
-        <h2>Itens em nao promoçao</h2>
+        {/*<h2>Itens em nao promoçao</h2>*/}
         {/* <ItemNaoP></ItemNaoP> */}
         {/* <ListaState></ListaState> */}
 
-       <ListaStateObjeto></ListaStateObjeto>
+       {/*<ListaStateObjeto></ListaStateObjeto>*/}
+
+       <ListadeUsuariosBanco></ListadeUsuariosBanco>
 
     </>   
   );
