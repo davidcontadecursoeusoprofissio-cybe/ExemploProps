@@ -5,7 +5,7 @@ import sqlite3 from 'sqlite3'
 import {open} from 'sqlite'
 
 import path from "path";
-
+//Função feita para criar a conecxão com o banco de dados
 async function abrirBanco(){
     const db = await open({
         filename: path.join(process.cwd(),'database.db'),
@@ -30,6 +30,8 @@ export async function GET(){
 
     return NextResponse.json(usuarios)
 }
+
+//Função feita para cadastra um novo usuario no banco de dados
 export async function POST(request){
     //Valor transfomado em json
     const dados = await request.json();
