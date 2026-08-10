@@ -30,3 +30,28 @@ export async function GET(){
 
     return NextResponse.json(usuarios)
 }
+export async function POST(request){
+    //Valor transfomado em json
+    const dados = await request.json();
+
+    //json transformado em objeto
+    const { nome, idade, foto }=dados;
+
+    //Chamando a função para abrir o meu banco
+    const db = await abrirBanco();
+
+    //executando o comando SQL(Liíguagem que liga e manipula o banco de dados) -INSERT INTO Table
+    const resultado = await db.run(
+        `INSERT INTO users (nome, idade, foto)VALUES (?,?,?)`,
+        [nome, idade, foto ?? null]
+
+    );
+
+    //Retorna o usuario que acabou de ser criado
+    const usuarioCriado = await db.get(
+        `SELECT * FROM users WHERE id=?`,
+        [resultado.lastID]
+    );
+
+    return NextResponse.json(usuarioCriado, {status: 201})
+}

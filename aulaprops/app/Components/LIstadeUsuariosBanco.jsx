@@ -21,7 +21,7 @@ export default function ListaDeUsuariosBanco(){
          usuarios.map((usuario)=>{
             return(
 
-               <li key={usuario.id}>
+            <li key={usuario.id}>
                {usuario.nome} - {usuario.idade}
             </li>
             )
