@@ -25,7 +25,8 @@ return db
 
 export async function GET(){
     const db = await abrirBanco();
-
+    
+   // Estou criando uma variavel usuario depois acesso o banco puxo os valores da tabela e guardo na variavel
     const usuarios = await db.all('SELECT * FROM users')
 
     return NextResponse.json(usuarios)
