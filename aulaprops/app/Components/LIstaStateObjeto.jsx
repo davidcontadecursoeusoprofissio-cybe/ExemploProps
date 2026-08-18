@@ -1,7 +1,7 @@
 "use client"
 
-import { useState , useRef} from "react"
 
+import { useState , useRef} from "react"
 export default function ListaState(){
     const [nome, setNome] = useState([])
 
