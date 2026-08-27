@@ -2,7 +2,7 @@ import{NextResponse} from "next/server"
 
 const PUBLIC_ROUTES = ["/login"];
 
-export function middleware(request){
+export function proxy(request){
 const {pathname} = request.nextUrl;
 const isPublicRoute = PUBLIC_ROUTTES.includes(pathname);
 const isAuthApi = pathname.startsWith("/api/login") || pathname.startsWith("/api/logout")
