@@ -14,8 +14,28 @@ import ListadeUsuariosBanco from "@/app/Components/LIstadeUsuariosBanco"
 
 import ItemNaoP from   "@/app/Components/ItemNaoPromocao"
 import ListaState from "@/app/Components/ListaState"
-
+"use client"
+import {useState} from "react"
+import { useRouter } from "next/navigation";
 export default function Home() {
+  const router = useRouter()
+
+  const [email, setEmail]=useState("")
+  const [senha, setSenha]=useState("")
+
+  const resposta = await fetch("api/login",{
+    method: "POST",
+    headers:{
+      "Content-Type":"Aplication/json"
+    },
+    body: JSON.stringify({email, senha})
+  
+
+  });
+  router.push("/dashboard")
+  router.refresh()
+
+
   return (
     <>
     {/*<Menu></Menu>*/}
@@ -53,7 +73,35 @@ export default function Home() {
 
        {/*<ListaStateObjeto></ListaStateObjeto>*/}
 
-       <ListadeUsuariosBanco></ListadeUsuariosBanco>
+      {/* <ListadeUsuariosBanco></ListadeUsuariosBanco>*/}
+      <div className="flex flex-col justify-center bg-blue-800">
+        <form  className="bg-white-100 p-8 roundad-x1 onSubmit={handleSubmit}>
+
+          <h1>Entrar no sistema</h1>
+
+          <input type="text" placeholder="Digite seu email"
+          value={email}
+          onChange=((e)=> setEmail(e.target.value))
+          
+          
+          
+          />
+
+          <input type="text" placeholder="Digite sua senha" 
+          value={senha}
+          onChange=((e)=> setSenha(e.target.value))
+          
+          
+          
+          />
+
+          <button>Entrar</button>
+
+        </form>
+
+
+
+      </div>
 
     </>   
   );
