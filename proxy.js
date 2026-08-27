@@ -13,7 +13,7 @@ if(isPublicRoute || isAuthApi) {
 const token = request.cookies.get("auth_token");
 
 if(!token){
-    const loginUrl = new URL("/login",request.url);
+    const loginUrl = new URL("/",request.url);
     loginUrl.searchParams.set("from",pathname);
 
     return NextResponse.redirect(loginUrl)
